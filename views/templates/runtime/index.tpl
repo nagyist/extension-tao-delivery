@@ -31,14 +31,9 @@ use oat\tao\helpers\Template;
 
 
         <div id="content">
-            <h1>
-                 <span class="icon-delivery"></span>
-                <?=__("My Tests");?>
-            </h1>
              <?php if(count(get_data('startedDeliveries')) > 0) : ?>
             <div class="header">
                 <?php echo __("Paused Tests"); ?> 
-                <span class="counter">(<?php echo count($startedDeliveries); ?>)</span>
             </div>
             <div class="deliveries resume">
 
@@ -65,7 +60,7 @@ use oat\tao\helpers\Template;
        
         <?php if(count(get_data('availableDeliveries')) > 0) : ?>
             <div class="header">
-                <?php echo __("Assigned Tests"); ?> <span class="counter">(<?php echo count($availableDeliveries); ?>)</span>
+                <?php echo __("Assigned Tests"); ?>
             </div>
             <div class="deliveries start">
                 <?php foreach($availableDeliveries as $delivery) : ?>
@@ -84,10 +79,6 @@ use oat\tao\helpers\Template;
                             <br/>until <?php echo tao_helpers_Date::displayeDate($delivery["settingsDelivery"][TAO_DELIVERY_END_PROP]); ?>
                         <?php }?>
                           </div>
-
-                         <div class="tileDetail">
-                            <?php echo __('Attempt(s)');?> [ <?php echo $delivery["settingsDelivery"]["TAO_DELIVERY_USED_TOKENS"]; ?> / <?php echo ($delivery["settingsDelivery"][TAO_DELIVERY_MAXEXEC_PROP]!=0) ? $delivery["settingsDelivery"][TAO_DELIVERY_MAXEXEC_PROP] : __('Unlimited'); ?> ]
-                         </div>
                           
                           <a accesskey="" class="btn-info small rgt <?= ($delivery["settingsDelivery"]["TAO_DELIVERY_TAKABLE"]) ? "" : "disabled" ?>"
                                    href="<?=($delivery["settingsDelivery"]["TAO_DELIVERY_TAKABLE"]) ? _url('initDeliveryExecution', 'DeliveryServer', null, array('uri' => $delivery["compiledDelivery"]->getUri())) : '#'?>" >

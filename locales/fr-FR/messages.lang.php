@@ -337,5 +337,10 @@ $GLOBALS['__l10n']["Users"]="Utilisateurs";
 $GLOBALS['__l10n']["Version"]="Version";
 $GLOBALS['__l10n']["Versioning"]="Gestion des versions";
 $GLOBALS['__l10n']["Yes"]="Oui";
-
+$GLOBALS['__l10n']["Paused Tests"]="Évaluation en pause";
+$GLOBALS['__l10n']["Assigned Tests"]="Évaluation";
+$GLOBALS['__l10n']["Resume"]="Reprendre";
+$GLOBALS['__l10n']["Start"]="Démarrer";
+$GLOBALS['__l10n']["Started at "]="Démarré le ";
+$GLOBALS['__l10n']["Logout"]="Déconnexion";
 ?>
