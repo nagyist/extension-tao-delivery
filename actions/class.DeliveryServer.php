@@ -118,6 +118,7 @@ class taoDelivery_actions_DeliveryServer extends tao_actions_CommonModule
 	    $this->setData('serviceApi', tao_helpers_ServiceJavascripts::getServiceApi($runtime, $deliveryExecution->getIdentifier()));
 
 	    $this->setData('userLabel', common_session_SessionManager::getSession()->getUserLabel());
+	    $this->setData('deliveryLabel', $deliveryExecution->getLabel());
 	    $this->setData('deliveryExecution', $deliveryExecution->getIdentifier());
 	    $this->setData('showControls', $this->showControls());
         $this->setData('client_config_url', $this->getClientConfigUrl());
