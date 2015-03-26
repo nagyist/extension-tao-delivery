@@ -29,10 +29,9 @@ use oat\tao\helpers\Template;
 <?php if (get_data('showControls')) :?>
      <ul id="control" >
          
-         <li class="actionControl">
-                <a id="home" href="<?=_url('index', 'DeliveryServer')?>">
-                    <span class="icon-delivery"></span>
-                    <?php echo __("My Tests"); ?></a>
+         <li class="infoControl">
+            <span class="icon-delivery"></span>
+            <?php echo get_data('deliveryLabel'); ?>
          </li>
             
          <li class="separator">|</li>
