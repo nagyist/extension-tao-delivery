@@ -1,5 +1,6 @@
 <?php
 use oat\tao\helpers\Template;
+use oat\tao\helpers\Layout;
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?=tao_helpers_I18n::getLangCode()?>" lang="<?=tao_helpers_I18n::getLangCode()?>">
     <head>
@@ -7,6 +8,10 @@ use oat\tao\helpers\Template;
         <link rel="stylesheet" type="text/css" href="<?= Template::css('tao-main-style.css', 'tao')?>"/>
         <link rel="stylesheet" type="text/css" href="<?= Template::css('tao-3.css', 'tao')?>"/>
         <link rel="stylesheet" type="text/css" href="<?= Template::css('runtime/deliveryExecution.css', 'taoDelivery') ?>"/>
+        <link rel="stylesheet" type="text/css" href="<?= Template::css('custom-theme/jquery-ui-1.8.22.custom.css', 'tao') ?>"/>
+        <?php if (($themeUrl = Layout::getThemeUrl()) !== null): ?>
+        <link rel="stylesheet" href="<?= $themeUrl ?>" />
+        <?php endif; ?>
         <script src="<?= Template::js('lib/require.js', 'tao')?>"></script>
         <script type="text/javascript">
         (function(){
