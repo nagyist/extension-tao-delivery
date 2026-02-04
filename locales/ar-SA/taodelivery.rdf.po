@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: tao-open-source\n"
-"PO-Revision-Date: 2025-12-12 12:00\n"
+"PO-Revision-Date: 2026-01-13 09:53\n"
 "Last-Translator: TAO Translation Team <translation@tao.lu>\n"
 "MIME-Version: 1.0\n"
 "Language: ar\n"
@@ -30,12 +30,12 @@ msgstr "التوصيل"
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#PeriodStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "Start Date"
-msgstr "تاريخ البدء"
+msgstr "تاريخ البَدْء"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#PeriodStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
 msgid "The start date of the delivery"
-msgstr "تاريخ بدء التسليم"
+msgstr "تاريخ بَدْء التسليم"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#PeriodEnd
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
@@ -120,7 +120,7 @@ msgstr "اختبار تنفيذ التسليم"
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryExecutionStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "DeliveryExecution start"
-msgstr "بدء التنفيذ"
+msgstr "بَدْء التنفيذ"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryExecutionStart
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
@@ -140,7 +140,7 @@ msgstr "وقت الانتهاء من التسليم"
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#StatusOfDeliveryExecution
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "DeliveryExecutions Status"
-msgstr "حالة تنفيذ الاعدام"
+msgstr "حالة تنفيذ الإعدام"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#StatusOfDeliveryExecution
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
@@ -160,7 +160,7 @@ msgstr "حالة تنفيذ التسليم"
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryExecutionStatusActive
 msgctxt "http://www.w3.org/2000/01/rdf-schema#label"
 msgid "Active"
-msgstr "نشط"
+msgstr "نشيطٌ"
 
 # http://www.tao.lu/Ontologies/TAODelivery.rdf#DeliveryExecutionStatusActive
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
@@ -376,3 +376,4 @@ msgstr "تسليم"
 msgctxt "http://www.w3.org/2000/01/rdf-schema#comment"
 msgid "Delivery Manager"
 msgstr "مدير التوصيل"
+
